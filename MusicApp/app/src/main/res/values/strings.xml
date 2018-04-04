@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Music App</string>
+    <string name="now_playing_image_view">Now playing image view</string>
+    <string name="home_button_image_view">home_button_image_view</string>
+    <string name="artist_image_view">artist_image_view</string>
+    <string name="play_image_view">play_image_view</string>
+    <string name="next_image_view">next_image_view</string>
+    <string name="previous_image_view">previous_image_view</string>
+</resources>

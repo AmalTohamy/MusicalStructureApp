@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="artist_image_view_height">80dp</dimen>
+    <dimen name="artist_image_view_width">80dp</dimen>
+    <dimen name="layout_padding">14dp</dimen>
+    <dimen name="text_view_padding">16dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="height">0dp</dimen>
+    <dimen name="progress_bar_margin">24dp</dimen>
+    <dimen name="relative_layout_margin">12dp</dimen>
+    <dimen name="paddint_start_end">24dp</dimen>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_View"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:context="tohamy.amal.musicapp.Now_playing">
+
+    <ImageView
+        android:id="@+id/artist_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/artist_image_view"
+        android:padding="@dimen/padding" />
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:textSize="@dimen/text_size" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/progress_bar_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:layout_margin="@dimen/relative_layout_margin"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/play_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/padding"
+            android:contentDescription="@string/play_image_view"
+            android:src="@drawable/play_button" />
+
+        <ImageView
+            android:id="@+id/play_next_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/play_image_view"
+            android:contentDescription="@string/next_image_view"
+            android:padding="@dimen/padding"
+            android:paddingEnd="@dimen/paddint_start_end"
+            android:paddingStart="@dimen/paddint_start_end"
+            android:src="@drawable/next_track" />
+
+        <ImageView
+            android:id="@+id/play_previous_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/play_image_view"
+            android:contentDescription="@string/previous_image_view"
+            android:padding="@dimen/padding"
+            android:paddingEnd="@dimen/paddint_start_end"
+            android:paddingStart="@dimen/paddint_start_end"
+            android:src="@drawable/previous_track" />
+
+    </RelativeLayout>
+
+</LinearLayout>
