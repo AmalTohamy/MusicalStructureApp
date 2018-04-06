@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -10,17 +9,17 @@
         android:id="@+id/artist_image_view"
         android:layout_width="@dimen/artist_image_view_width"
         android:layout_height="@dimen/artist_image_view_height"
-        tools:src="@mipmap/ic_launcher_round"
-        android:contentDescription="@string/artist_image_view" />
+        android:contentDescription="@string/artist_image_view"
+        tools:src="@mipmap/ic_launcher_round" />
 
     <TextView
         android:id="@+id/artist_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="artist name"
-        android:layout_toEndOf="@+id/artist_image_view"
         android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/artist_image_view"
         android:padding="@dimen/text_view_padding"
+        android:textSize="@dimen/text_size"
         android:textStyle="bold"
-        android:textSize="@dimen/text_size"/>
+        tools:text="artist name" />
 </RelativeLayout>

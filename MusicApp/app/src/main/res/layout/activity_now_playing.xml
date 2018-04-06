@@ -19,18 +19,12 @@
 
     <TextView
         android:id="@+id/song_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:padding="@dimen/padding"
-        android:textSize="@dimen/text_size"
+        style="@style/text_view_style"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/artist_name"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/height"
-        android:layout_gravity="center_horizontal"
+        style="@style/text_view_style"
         android:layout_weight="1"
         android:textSize="@dimen/text_size" />
 
@@ -49,33 +43,23 @@
 
         <ImageView
             android:id="@+id/play_image_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/image_view_style"
             android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/padding"
             android:contentDescription="@string/play_image_view"
             android:src="@drawable/play_button" />
 
         <ImageView
             android:id="@+id/play_next_image_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/image_view_style"
             android:layout_toEndOf="@id/play_image_view"
             android:contentDescription="@string/next_image_view"
-            android:padding="@dimen/padding"
-            android:paddingEnd="@dimen/paddint_start_end"
-            android:paddingStart="@dimen/paddint_start_end"
             android:src="@drawable/next_track" />
 
         <ImageView
             android:id="@+id/play_previous_image_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/image_view_style"
             android:layout_toStartOf="@id/play_image_view"
             android:contentDescription="@string/previous_image_view"
-            android:padding="@dimen/padding"
-            android:paddingEnd="@dimen/paddint_start_end"
-            android:paddingStart="@dimen/paddint_start_end"
             android:src="@drawable/previous_track" />
 
     </RelativeLayout>
