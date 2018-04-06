@@ -324,7 +324,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
 
-                if (singer.get(position).getmDefaultArtist().equals(R.string.mohamed_abd_elmotelb)) {
+                if (singer.get(position).getmDefaultArtist().equals(getString(R.string.mohamed_abd_elmotelb))) {
                     songList.add(getString(R.string.bayaa_elhawa));
                     songList.add(getString(R.string.elsabt_faat));
                     songList.add(getString(R.string.ahll_elmhaba));
